@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -18,11 +19,17 @@ public class Exercicio {
 //		numbers.stream().distinct().sorted().forEach(System.out::println);
 
 		// 3º
-//		numbers.stream().filter(n -> n%2 == 1).distinct().sorted().forEach(System.out::println);
+//		numbers.stream().distinct().filter(n -> n%2 == 1).sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
 		// 4º
 //		int soma = numbers.stream().skip(3).mapToInt(n-> n).sum();
 //		System.out.println(soma);
+
+//		System.out.println(
+//                numbers.stream()
+//                        .skip(3)
+//                        .reduce(0, (total, value) -> total + value)
+//        );
 
 		// 5º
 //		numbers.stream().map(n -> n*2).forEach(System.out::println);
@@ -32,16 +39,28 @@ public class Exercicio {
 //		System.out.println(collectImpar);
 //		List<Integer> collectPar = numbers.stream().filter(n -> n%2 == 0).distinct().collect(Collectors.toList());
 //		System.out.println(collectPar);
+		
+//		System.out.println(
+//                numbers.stream()
+//                        .distinct()
+//                        .collect(Collectors.groupingBy(n -> n % 2))
+//        );
 
 		// 7º
-//		  Integer max = numbers.stream().max(Comparator.naturalOrder()).orElseThrow();
-//		  System.out.println(max);
+//		Integer max = numbers.stream().max(Comparator.naturalOrder()).orElseThrow();
+//		System.out.println(max);
 
 		// 8º
 //		numbers.stream().limit(3).forEach(System.out::println);
 
 		// 9º
-//		numbers.stream().mapToInt(n -> n).average().ifPresentOrElse(System.out::println, () -> System.out.println("Double.NaN"));
+//		numbers.stream()
+//		.mapToInt(n -> n)
+//		.average()
+//		.orElse(Double.NaN);
+
+		
+		//		.ifPresentOrElse(System.out::println, () -> System.out.println("Double.NaN"));
 
 		// 10º
 //		long count = numbers.stream().mapToInt(n -> n).count();
@@ -52,10 +71,13 @@ public class Exercicio {
 //		System.out.println(average);
 //		Optional<Integer> max = numbers.stream().max(Comparator.naturalOrder());
 //		System.out.println(max);
-		
+
 		// 11º
-		LocalDate hoje = LocalDate.now();   
-        numbers.stream().distinct().sorted().forEach(n ->System.out.println(hoje.plusDays(n)));
+//		LocalDate hoje = LocalDate.now();   
+//		numbers.stream()
+//				.distinct()
+//				.sorted()
+//				.forEach(n ->System.out.println(hoje.plusDays(n)));
 
 	}
 }
