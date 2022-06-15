@@ -1,3 +1,14 @@
-/TestaPoolConexoes.class
-/modelo/
+/ConnectionFactory.class
+/Curso.class
+/Datas.class
+/ExemploCurso.class
+/Exercicio.class
+/OrdenaStrings.class
+/TestaConexao.class
 /TestaInsecaoComProduto.class
+/TestaInsercao.class
+/TestaInsercaoComParametro.class
+/TestaListagem.class
+/TestaPoolConexoes.class
+/TestaRemocao.class
+/modelo/
