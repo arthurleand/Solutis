@@ -5,9 +5,9 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import com.alura.forum.controller.repository.CursoRepository;
 import com.alura.forum.modelo.Curso;
 import com.alura.forum.modelo.Topico;
+import com.alura.forum.repository.CursoRepository;
 
 public class TopicoForm {
 
